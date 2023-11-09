@@ -2,6 +2,7 @@ const form = document.querySelector('#form')
 const targetLanguage = document.querySelector('#target-language')
 const textToTranslate = document.querySelector('#source-text')
 const resultText = document.querySelector('#result')
+const originalText = document.querySelector('#original-text')
 
 const fetchData = async () => {
     const url = 'https://google-translate113.p.rapidapi.com/api/v1/translator/text'
@@ -33,7 +34,8 @@ const showTraslatedText = async () => {
     const translateText = await fetchData()
 
     resultText.textContent = translateText
-    
+    originalText.textContent = textToTranslate
+
     textToTranslate.value = ''
 } 
 

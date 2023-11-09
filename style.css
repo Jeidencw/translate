@@ -47,6 +47,10 @@ button:hover {
     background-color: #555;
 }
 
+.original-text{
+    color: #555;
+}
+
 @media screen and (max-width: 600px) {
     .translation-form, .translation-result {
         width: 100%;
