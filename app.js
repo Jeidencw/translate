@@ -34,7 +34,7 @@ const showTraslatedText = async () => {
     const translateText = await fetchData()
 
     resultText.textContent = translateText
-    originalText.textContent = textToTranslate
+    originalText.textContent = textToTranslate.value
 
     textToTranslate.value = ''
 } 
