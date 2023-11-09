@@ -1,0 +1,65 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.translation-form, .translation-result {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+textarea{
+    width: calc(100% - 18px);
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 600px) {
+    .translation-form, .translation-result {
+        width: 100%;
+        margin: 0;
+    }
+
+    textarea, select {
+        margin-bottom: 8px;
+    }
+}
+
+.footer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+

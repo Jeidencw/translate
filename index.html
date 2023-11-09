@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tradução Online</title>
+</head>
+<body>
+    <header>
+        <h1>Tradução Online</h1>
+    </header>
+
+    <main>
+        <section class="translation-form">
+            <h2>Traduza seu texto</h2>
+            <form action="#" method="post" id="form">
+                <label for="source-text">Texto Original:</label>
+                <textarea id="source-text" name="source-text" rows="4" placeholder="Digite seu texto aqui..." required></textarea>
+
+                <label for="target-language">Idioma de Destino:</label>
+                <select id="target-language" name="target-language" required>
+                    <option value="en">Inglês</option>
+                    <option value="es">Espanhol</option>
+                    <option value="fr">Francês</option>
+                    <option value="pt">Português</option>
+                </select>
+
+                <button type="submit">Traduzir</button>
+            </form>
+        </section>
+
+        <section class="translation-result">
+            <h2>Resultado da Tradução: </h2>
+            <p id="result">A tradução aparecerá aqui.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tradução Online. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
