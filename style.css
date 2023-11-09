@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 
-header, footer {
+header {
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -56,10 +56,5 @@ button:hover {
     textarea, select {
         margin-bottom: 8px;
     }
-}
-
-.footer {
-    max-width: 800px;
-    margin: 0 auto;
 }
 
