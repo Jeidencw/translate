@@ -2,7 +2,7 @@ const form = document.querySelector('#form')
 const targetLanguage = document.querySelector('#target-language')
 const textToTranslate = document.querySelector('#source-text')
 const resultText = document.querySelector('#result')
-const originalText = document.querySelector('#original-text')
+const eraser = document.querySelector('.eraser-icon')
 
 const fetchData = async () => {
     const url = 'https://google-translate113.p.rapidapi.com/api/v1/translator/text'
@@ -34,11 +34,11 @@ const showTraslatedText = async () => {
     const translateText = await fetchData()
 
     resultText.textContent = translateText
-    originalText.textContent = textToTranslate.value
-
-    textToTranslate.value = ''
 } 
 
+const clearInput = () => textToTranslate.value = ''
+
+eraser.addEventListener('click', clearInput)
 
 form.addEventListener('keypress', e => {
     if(textToTranslate){
@@ -49,6 +49,5 @@ form.addEventListener('keypress', e => {
 })
 form.addEventListener('submit', e => {
     e.preventDefault()
-
     showTraslatedText()
 })

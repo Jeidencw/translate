@@ -35,6 +35,22 @@ textarea{
     width: calc(100% - 18px);
 }
 
+#source-text-container {
+    position: relative;
+}
+
+.eraser-icon {
+    position: absolute;
+    bottom: 22px; 
+    left: 2px; 
+    color: #888; 
+}
+
+#source-text-container:hover .eraser-icon {
+    color: black;
+}
+
+
 button {
     background-color: #333;
     color: #fff;
