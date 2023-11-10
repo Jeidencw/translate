@@ -76,5 +76,9 @@ button:hover {
     textarea, select {
         margin-bottom: 8px;
     }
+
+    .eraser-icon{
+        bottom: 12px;
+    }
 }
 
